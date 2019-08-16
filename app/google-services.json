@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "733786961458",
+    "firebase_url": "https://redcardsoccer-82cdc.firebaseio.com",
+    "project_id": "redcardsoccer-82cdc",
+    "storage_bucket": "redcardsoccer-82cdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733786961458:android:52dc485be9eaa1db",
+        "android_client_info": {
+          "package_name": "com.example.redcardsoccer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733786961458-jr0k8iqrbdtcmnh5bgvtcrd1oa65drnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.redcardsoccer",
+            "certificate_hash": "577c9a479010ab6f0f87620cd0f63b28e05a127f"
+          }
+        },
+        {
+          "client_id": "733786961458-4ebsh8ki2eo6s8rgodl1ll5rgkhjh1ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe3hxsARZ4W_mqpksSpqPn6eBReWuREdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733786961458-4ebsh8ki2eo6s8rgodl1ll5rgkhjh1ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
