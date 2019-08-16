@@ -13,6 +13,6 @@ class PromotionRow(val promotionObject:PromotionObject): Item<ViewHolder>() {
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.description_textview_promotion_row.text = promotionObject.description
         Picasso.get().load(promotionObject.imageUrl).into(viewHolder.itemView.imageview_promotion_row)
-        //change name of profileImageUrl later to ImageUrl
+        //change name of profileImageUrl later to ImageUrlasdasdasd
     }
 }
