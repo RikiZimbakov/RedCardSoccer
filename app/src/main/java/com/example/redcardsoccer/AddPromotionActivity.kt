@@ -101,6 +101,7 @@ class AddPromotionActivity : AppCompatActivity() {
         ref.setValue(PromotionObject(ref.key!!, profileImageUrl, description_edit_text_add_promotion.text.toString().trim(), dateAndTime))
             .addOnSuccessListener {
                 Toast.makeText(this, "Successfully saved promotion", Toast.LENGTH_SHORT).show()
+                finish()
             }
             .addOnFailureListener{
                 Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
