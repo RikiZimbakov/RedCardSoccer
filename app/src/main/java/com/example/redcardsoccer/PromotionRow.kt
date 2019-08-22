@@ -12,7 +12,7 @@ class PromotionRow(val promotionObject:PromotionObject): Item<ViewHolder>() {
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.description_textview_promotion_row.text = promotionObject.description
+        viewHolder.itemView.timestamp_textview_promotion_row.text = promotionObject.timeStamp
         Picasso.get().load(promotionObject.imageUrl).into(viewHolder.itemView.imageview_promotion_row)
-
     }
 }

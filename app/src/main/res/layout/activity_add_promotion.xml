@@ -18,26 +18,32 @@
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <ImageView
-                    android:src="@drawable/default_select_image"
-                    android:layout_width="0dp"
-                    android:layout_height="250dp"
-                    android:id="@+id/image_view_add_promotion" app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"/>
-            <EditText
-                    android:gravity="top|left"
+                    android:id="@+id/image_view_add_promotion"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:inputType="textMultiLine"
-                    android:ems="10"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view_add_promotion"
-                    app:layout_constraintStart_toStartOf="parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_select_image"
+                    app:layout_constraintDimensionRatio="4:3"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
                     android:id="@+id/description_edit_text_add_promotion"
-                    android:hint="write a description here" app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintVertical_bias="1.0"/>
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:hint="write a description here"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_add_promotion" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

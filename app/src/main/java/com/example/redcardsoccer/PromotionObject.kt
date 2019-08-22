@@ -1,5 +1,6 @@
 package com.example.redcardsoccer
 
-class PromotionObject(val imageUrl: String, val description: String){
-    constructor(): this("","")
+class PromotionObject(val key: String, val imageUrl: String, val description: String, val timeStamp: String){
+    constructor(): this("","","", "")
+
 }

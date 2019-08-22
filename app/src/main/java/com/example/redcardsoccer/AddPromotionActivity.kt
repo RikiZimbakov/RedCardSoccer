@@ -12,6 +12,9 @@ import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_add_promotion.*
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
 import java.util.*
 
 class AddPromotionActivity : AppCompatActivity() {
@@ -90,8 +93,12 @@ class AddPromotionActivity : AppCompatActivity() {
     }
 
     private fun savePromotion(profileImageUrl: String){
+        val timeStamp = LocalDateTime.now()
+        val timeFormatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)
+        val dateAndTime = timeStamp.format(timeFormatter)
+
         val ref = FirebaseDatabase.getInstance().getReference("/promotions").push()
-        ref.setValue(PromotionObject(profileImageUrl,description_edit_text_add_promotion.text.toString().trim()))
+        ref.setValue(PromotionObject(ref.key!!, profileImageUrl, description_edit_text_add_promotion.text.toString().trim(), dateAndTime))
             .addOnSuccessListener {
                 Toast.makeText(this, "Successfully saved promotion", Toast.LENGTH_SHORT).show()
             }
